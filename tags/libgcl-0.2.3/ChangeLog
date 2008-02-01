@@ -1,0 +1,165 @@
+=== libgcl-0.2.2 released ===
+
+2008-02-01  yetist  <yetist@gmail.com>
+
+	* README: 
+	* configure.ac: 
+	* NEWS: 
+	* po/ChangeLog: 
+	* po/zh_CN.po: 
+
+	libgcl-0.2.3 released.
+
+2008-02-01  yetist  <yetist@gmail.com>
+
+	* libgcl-1.pc.in: requires gtk+-2.0. 
+
+2008-02-01  yetist  <yetist@gmail.com>
+
+	* debian/control: update debian package description.
+
+2008-02-01  yetist  <yetist@gmail.com>
+
+	* gcl/gcl-calendar.h: 
+	* gcl/update-calendar.sh: 
+	* gcl/calendar.patch: 
+	* gcl/gcl-calendar.c: 
+	add update-calendar.sh to generate gcl-calendar.[hc] from gtk+.
+
+=== libgcl-0.2.2 released ===
+
+2008-01-24  yetist  <yetist@gmail.com>
+
+	* configure.ac: 
+
+	libgcl-0.2.2 released.
+
+2008-01-24  yetist  <yetist@gmail.com>
+
+	* debian/control: 
+	* debian/libgcl0.install: 
+	* debian/libgcl-bin.install: 
+	* debian/rules: 
+	* Makefile.am: 
+	some change.
+
+2008-01-24  yetist  <yetist@gmail.com>
+
+	* debian: 
+	* debian/control: 
+	* debian/dirs: 
+	* debian/compat: 
+	* debian/libgcl-doc.install: 
+	* debian/libgcl-bin.install: 
+	* debian/libgcl-dev.dirs: 
+	* debian/copyright: 
+	* debian/docs: 
+	* debian/rules: 
+	* debian/changelog.in: 
+	* debian/libgcl-dev.install: 
+	* configure.ac: 
+	* gcl/gcl-date.c: 
+	* gcl/Makefile.am: 
+	* data/Makefile.am: 
+	* Makefile.am: 
+	add debian directory.
+
+2008-01-21  yetist  <yetist@gmail.com>
+
+	* data/holiday.dat: 
+	add comment.
+
+2008-01-21  yetist  <yetist@gmail.com>
+
+	* NEWS: 
+	add news.
+	
+2008-01-21  yetist  <yetist@gmail.com>
+
+	* configure.ac: 
+	* po/ChangeLog: 
+	* po/zh_CN.po: 
+
+	update chinese translate.
+
+2008-01-21  yetist  <yetist@gmail.com>
+
+	* docs/reference/tmpl/gclcalendar.sgml: 
+	* gcl/gcl-calendar.c: fixed max header width problems.
+	* po/zh_CN.po: update chinese translate.
+
+2008-01-21  yetist  <yetist@gmail.com>
+
+	* docs/reference/gcl-sections.txt: 
+	* docs/reference/gcl-docs.sgml: 
+	* docs/reference/tmpl/gclcalendar.sgml: 
+	* docs/reference/tmpl/gcldate.sgml: 
+	* docs/reference/tmpl/gcl-unused.sgml: 
+	* gcl/gcl-date.c: 
+	* gcl/gcl-calendar.h: 
+	* gcl/gcl-calendar.c: 
+	modified to generate the development document.
+
+2008-01-21  yetist  <yetist@gmail.com>
+
+	* configure.ac: add enable arg: run-in-source-tree.
+	* gcl/gcl-date.h: 
+	* gcl/gcl-date.c: 
+	- remove gcl_date_get_solar_date() gcl_date_get_lunar_date() gcl_date_get_shengxiao() gcl_date_get_ganzhi() gcl_date_get_bazi() gcl_date_get_jieri()
+	-add gcl_date_strftime().
+	* gcl/gcl.h: 
+	* gcl/gcl-calendar.h: 
+	* gcl/gcl-calendar.c: 
+	add gcl_calendar widget.
+	* gcl/Makefile.am: add gcl_calendar.{h,c}
+	* tests/test-date.c: modify for new functions. 
+	* tests/test-calendar.c: added for test gcl_calendar.
+	* tests/Makefile.am: add gcl_calendar.{h,c}.
+	* docs/reference/tmpl/gcldate.sgml: 
+	* po/POTFILES.in: add gcl_calendar.{h,c}
+	* po/zh_CN.po: 
+
+2007-12-19  yetist  <yetist@gmail.com>
+
+	* docs/reference/gcl-sections.txt: 
+	* docs/reference/gcl.types: 
+	* docs/reference/tmpl/gcldate.sgml: 
+	* docs/reference/tmpl/gclmain.sgml: 
+	* tests/test-date.c: 
+	* configure.ac: 
+	* gcl/gcl-date.c: 
+	* gcl/gcl-date.h: 
+	* gcl/Makefile.am: 
+	* data/holiday.dat: 
+	* data/jieri.table: 
+	* data/Makefile.am: 
+	* Makefile.am: 
+	add holiday.
+
+2007-12-18  yetist  <yetist@gmail.com>
+
+	* tests/test-date.c: 
+	* configure.ac: 
+	* gcl/gcl-date.c: 
+	* gcl/gcl-date.h: 
+	* data: 
+	* data/jieri.table: 
+	add holiday
+
+2007-09-03  yetist  <yetist@gmail.com>
+
+    * configure.ac:
+    * docs/reference/yeti-docs.sgml:
+    * docs/reference/tmpl/gcldate.sgml:
+    * docs/reference/yeti-sections.txt:
+    * Makefile.am:
+    * yeti/gcl-date.c:
+    * yeti/Makefile.am:
+    * yeti-1.0.pc.in:
+    * po/zh_CN.po:
+    some change.
+
+2007-09-03  yetist  <yetist@gmail.com>
+
+    * all:
+    init svn version.
