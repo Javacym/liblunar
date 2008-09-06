@@ -1,3 +1,10 @@
+2008-09-06  yetist  <yetist@gmail.com>
+
+	* po/zh_HK.po: 
+	* po/LINGUAS: 
+	* po/zh_TW.po: 
+	add zh_TW and zh_HK languages.
+
 === liblunar-1.0.0 released ===
 
 2008-04-17  yetist  <yetist@gmail.com>
