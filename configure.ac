@@ -3,9 +3,9 @@ AC_PREREQ(2.59)
 
 m4_define([liblunar_major_version], [1])
 m4_define([liblunar_minor_version], [0])
-m4_define([liblunar_micro_version], [1])
+m4_define([liblunar_micro_version], [0])
 m4_define([liblunar_real_version], [liblunar_major_version.liblunar_minor_version.liblunar_micro_version])
-m4_define([liblunar_version], [1.0.1])
+m4_define([liblunar_version], [1.0.0])
 
 
 AC_INIT(liblunar, liblunar_version, yetist@gmail.com)
@@ -42,26 +42,9 @@ AC_SUBST(CUR_DATE)
 GLIB2_REQUIRED=2.4.0
 GTK_REQUIRED=2.4.0
 
-AC_ARG_ENABLE([gtk],
-	AS_HELP_STRING([--disable-gtk],[Disable gtk support]),
-	enable_gtk=$enableval,
-	enable_gtk=yes)
-AC_MSG_RESULT([$enable_gtk])
-
-
-PKG_CHECK_MODULES(LIBLUNAR, glib-2.0 >= $GLIB2_REQUIRED)
-
-if test "x$enable_gtk" = "xyes" ; then
-  PKG_CHECK_MODULES(GTK, gtk+-2.0 >= $GTK_REQUIRED)
-  LIBLUNAR_CFLAGS="$LIBLUNAR_CFLAGS $GTK_CFLAGS"
-  LIBLUNAR_LIBS="$LIBLUNAR_LIBS $GTK_LIBS"
-  AC_DEFINE(ENABLE_GTK, 1, [enable gtk for liblunar.])
-fi
-
+PKG_CHECK_MODULES(LIBLUNAR, glib-2.0 >= $GLIB2_REQUIRED gtk+-2.0 >= $GTK_REQUIRED)
 AC_SUBST(LIBLUNAR_CFLAGS)
 AC_SUBST(LIBLUNAR_LIBS)
-
-AM_CONDITIONAL([ENABLE_GTK],[test "x$enable_gtk" = "xyes"])
 
 
 dnl run in source tree
@@ -82,16 +65,12 @@ dnl ================================================================
 dnl Python
 dnl ================================================================
 
-if test "x$enable_gtk" = "xyes" ; then
 AC_MSG_CHECKING([whether Python support is requested])
 AC_ARG_ENABLE([python],
-	AS_HELP_STRING([--disable-python],[Enable python support]),
+	AS_HELP_STRING([--enable-python],[Enable python support]),
 	[enable_python=$enableval have_python=$enableval],
 	[enable_python=autodetect have_python=yes])
 AC_MSG_RESULT([$enable_python])
-else
-    have_python=no
-fi
 
 if test "x$have_python" != "xno"; then
 	AM_PATH_PYTHON([2.3],[],[no])

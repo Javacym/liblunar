@@ -23,7 +23,7 @@ Translate the date between solar and chinese lunar.
 </para>
 
 
-<!-- ##### STRUCT LunarDate ##### -->
+<!-- ##### STRUCT LUNARDate ##### -->
 <para>
 The LUNARDate struct contains only private fields and should not be used directly.
 </para>
@@ -36,7 +36,7 @@ The LUNARDate struct contains only private fields and should not be used directl
 
 
 
-<!-- ##### ENUM LunarDateError ##### -->
+<!-- ##### ENUM LUNARDateError ##### -->
 <para>
 
 </para>

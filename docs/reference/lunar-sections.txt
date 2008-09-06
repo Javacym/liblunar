@@ -8,9 +8,9 @@ lunar_init
 <SECTION>
 <FILE>lunardate</FILE>
 GDateHour
-LunarDate
+LUNARDate
 LUNAR_DATE_ERROR
-LunarDateError
+LUNARDateError
 lunar_date_error_quark
 lunar_date_new
 lunar_date_set_solar_date

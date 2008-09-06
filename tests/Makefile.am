@@ -7,11 +7,9 @@ INCLUDES =                                              \
         -DLUNAR_HOLIDAYDIR=\""$(datadir)/liblunar/"\"     \
 	$(NULL)
 
-noinst_PROGRAMS =test-date
-
-if ENABLE_GTK
-noinst_PROGRAMS += test-calendar
-endif
+noinst_PROGRAMS =			\
+        test-date			\
+	test-calendar
 
 test_date_SOURCES =          		\
         test-date.c

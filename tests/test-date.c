@@ -25,9 +25,10 @@
 #include <lunar/lunar.h>
 
 
-void display (LunarDate *date, gboolean islunar)
+void display (LUNARDate *date, gboolean islunar)
 {
     char a[13][255];
+    CLDate *d;
     g_printf("\n");
     g_printf("format:%%(YEAR)年%%(MONTH)月%%(DAY)日%%(HOUR)时->%s\n", lunar_date_strftime(date, "%(YEAR)年%(MONTH)月%(DAY)日%(HOUR)时"));
     g_printf("format:%%(year)年%%(month)月%%(day)日%%(hour)时->%s\n", lunar_date_strftime(date, "%(year)年%(month)月%(day)日%(hour)时"));
@@ -40,7 +41,7 @@ void display (LunarDate *date, gboolean islunar)
 }
 
 /*
-gchar* lunar_date_strftime (LunarDate *date, const char *format);
+gchar* lunar_date_strftime (LUNARDate *date, const char *format);
  * %(YEAR)年%(MONTH)月%(DAY)日      公历：大写
  * %(year)年%(month)月%(day)日      公历：小写
  * %(NIAN)年%(YUE)月%(RI)日%(SHI)时 阴历：大写
@@ -56,7 +57,7 @@ gchar* lunar_date_strftime (LunarDate *date, const char *format);
 void random_test(void)
 {
     GError *error = NULL;
-    LunarDate *date;
+    LUNARDate *date;
 
     date = lunar_date_new();
     srandom(time(NULL));
@@ -89,7 +90,7 @@ void random_test(void)
 void test(gchar* argv[])
 {
     GError *error = NULL;
-    LunarDate *date;
+    LUNARDate *date;
 
     date = lunar_date_new();
 
