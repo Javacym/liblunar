@@ -1,4 +1,4 @@
-PWD=`pwd`
+PWD=$(shell pwd)
 all: lunar-date-doc
 lunar-date-doc:
 	@mkdir tmp; \
