@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE book PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "">
+<book xmlns="http://www.devhelp.net/book" title="LunarDate Reference Manual" link="index.html" author="" name="lunar-date">
+  <chapters>
+    <sub name="LunarDate" link="ch01.html">
+      <sub name="lunar-misc" link="lunar-date-lunar-misc.html"/>
+      <sub name="LunarDate" link="LunarDate.html"/>
+    </sub>
+    <sub name="Object Hierarchy" link="object-tree.html"/>
+    <sub name="API Index" link="api-index-full.html"/>
+    <sub name="Index of deprecated API" link="deprecated-api-index.html"/>
+    <sub name="Annotation Glossary" link="annotation-glossary.html"/>
+  </chapters>
+  <functions>
+    <function name="LIBLUNAR_MAJOR_VERSION" link="lunar-date-lunar-misc.html#LIBLUNAR-MAJOR-VERSION:CAPS"/>
+    <function name="LIBLUNAR_MINOR_VERSION" link="lunar-date-lunar-misc.html#LIBLUNAR-MINOR-VERSION:CAPS"/>
+    <function name="LIBLUNAR_MICRO_VERSION" link="lunar-date-lunar-misc.html#LIBLUNAR-MICRO-VERSION:CAPS"/>
+    <function name="lunar_init ()" link="lunar-date-lunar-misc.html#lunar-init"/>
+    <function name="lunar_check_version ()" link="lunar-date-lunar-misc.html#lunar-check-version"/>
+    <function name="LIBLUNAR_CHECK_VERSION()" link="lunar-date-lunar-misc.html#LIBLUNAR-CHECK-VERSION:CAPS"/>
+    <function name="struct LunarDate" link="LunarDate.html#LunarDate-struct"/>
+    <function name="enum LunarDateError" link="LunarDate.html#LunarDateError"/>
+    <function name="lunar_date_new ()" link="LunarDate.html#lunar-date-new"/>
+    <function name="lunar_date_set_solar_date ()" link="LunarDate.html#lunar-date-set-solar-date"/>
+    <function name="lunar_date_set_lunar_date ()" link="LunarDate.html#lunar-date-set-lunar-date"/>
+    <function name="lunar_date_get_jieri ()" link="LunarDate.html#lunar-date-get-jieri"/>
+    <function name="lunar_date_strftime ()" link="LunarDate.html#lunar-date-strftime"/>
+    <function name="lunar_date_free ()" link="LunarDate.html#lunar-date-free"/>
+  </functions>
+</book>

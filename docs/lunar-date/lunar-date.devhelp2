@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE book PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "">
+<book xmlns="http://www.devhelp.net/book" title="LunarDate Reference Manual" link="index.html" author="" name="lunar-date" version="2" language="c">
+  <chapters>
+    <sub name="LunarDate" link="ch01.html">
+      <sub name="lunar-misc" link="lunar-date-lunar-misc.html"/>
+      <sub name="LunarDate" link="LunarDate.html"/>
+    </sub>
+    <sub name="Object Hierarchy" link="object-tree.html"/>
+    <sub name="API Index" link="api-index-full.html"/>
+    <sub name="Index of deprecated API" link="deprecated-api-index.html"/>
+    <sub name="Annotation Glossary" link="annotation-glossary.html"/>
+  </chapters>
+  <functions>
+    <keyword type="macro" name="LIBLUNAR_MAJOR_VERSION" link="lunar-date-lunar-misc.html#LIBLUNAR-MAJOR-VERSION:CAPS"/>
+    <keyword type="macro" name="LIBLUNAR_MINOR_VERSION" link="lunar-date-lunar-misc.html#LIBLUNAR-MINOR-VERSION:CAPS"/>
+    <keyword type="macro" name="LIBLUNAR_MICRO_VERSION" link="lunar-date-lunar-misc.html#LIBLUNAR-MICRO-VERSION:CAPS"/>
+    <keyword type="function" name="lunar_init ()" link="lunar-date-lunar-misc.html#lunar-init"/>
+    <keyword type="function" name="lunar_check_version ()" link="lunar-date-lunar-misc.html#lunar-check-version"/>
+    <keyword type="macro" name="LIBLUNAR_CHECK_VERSION()" link="lunar-date-lunar-misc.html#LIBLUNAR-CHECK-VERSION:CAPS"/>
+    <keyword type="struct" name="struct LunarDate" link="LunarDate.html#LunarDate-struct"/>
+    <keyword type="enum" name="enum LunarDateError" link="LunarDate.html#LunarDateError"/>
+    <keyword type="function" name="lunar_date_new ()" link="LunarDate.html#lunar-date-new"/>
+    <keyword type="function" name="lunar_date_set_solar_date ()" link="LunarDate.html#lunar-date-set-solar-date"/>
+    <keyword type="function" name="lunar_date_set_lunar_date ()" link="LunarDate.html#lunar-date-set-lunar-date"/>
+    <keyword type="function" name="lunar_date_get_jieri ()" link="LunarDate.html#lunar-date-get-jieri"/>
+    <keyword type="function" name="lunar_date_strftime ()" link="LunarDate.html#lunar-date-strftime"/>
+    <keyword type="function" name="lunar_date_free ()" link="LunarDate.html#lunar-date-free"/>
+    <keyword type="constant" name="LUNAR_DATE_ERROR_INTERNAL" link="LunarDate.html#LUNAR-DATE-ERROR-INTERNAL:CAPS"/>
+    <keyword type="constant" name="LUNAR_DATE_ERROR_YEAR" link="LunarDate.html#LUNAR-DATE-ERROR-YEAR:CAPS"/>
+    <keyword type="constant" name="LUNAR_DATE_ERROR_MONTH" link="LunarDate.html#LUNAR-DATE-ERROR-MONTH:CAPS"/>
+    <keyword type="constant" name="LUNAR_DATE_ERROR_DAY" link="LunarDate.html#LUNAR-DATE-ERROR-DAY:CAPS"/>
+    <keyword type="constant" name="LUNAR_DATE_ERROR_HOUR" link="LunarDate.html#LUNAR-DATE-ERROR-HOUR:CAPS"/>
+    <keyword type="constant" name="LUNAR_DATE_ERROR_LEAP" link="LunarDate.html#LUNAR-DATE-ERROR-LEAP:CAPS"/>
+  </functions>
+</book>

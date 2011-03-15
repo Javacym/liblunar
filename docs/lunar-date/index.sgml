@@ -1,0 +1,34 @@
+<ONLINE href="http://[SERVER]/lunar-date/index.html">
+<ANCHOR id="lunar-date-lunar-misc" href="lunar-date/lunar-date-lunar-misc.html">
+<ANCHOR id="lunar-date-lunar-misc.synopsis" href="lunar-date/lunar-date-lunar-misc.html#lunar-date-lunar-misc.synopsis">
+<ANCHOR id="lunar-date-lunar-misc.description" href="lunar-date/lunar-date-lunar-misc.html#lunar-date-lunar-misc.description">
+<ANCHOR id="lunar-date-lunar-misc.details" href="lunar-date/lunar-date-lunar-misc.html#lunar-date-lunar-misc.details">
+<ANCHOR id="LIBLUNAR-MAJOR-VERSION:CAPS" href="lunar-date/lunar-date-lunar-misc.html#LIBLUNAR-MAJOR-VERSION:CAPS">
+<ANCHOR id="LIBLUNAR-MINOR-VERSION:CAPS" href="lunar-date/lunar-date-lunar-misc.html#LIBLUNAR-MINOR-VERSION:CAPS">
+<ANCHOR id="LIBLUNAR-MICRO-VERSION:CAPS" href="lunar-date/lunar-date-lunar-misc.html#LIBLUNAR-MICRO-VERSION:CAPS">
+<ANCHOR id="lunar-init" href="lunar-date/lunar-date-lunar-misc.html#lunar-init">
+<ANCHOR id="lunar-check-version" href="lunar-date/lunar-date-lunar-misc.html#lunar-check-version">
+<ANCHOR id="LIBLUNAR-CHECK-VERSION:CAPS" href="lunar-date/lunar-date-lunar-misc.html#LIBLUNAR-CHECK-VERSION:CAPS">
+<ANCHOR id="LunarDate" href="lunar-date/LunarDate.html">
+<ANCHOR id="LunarDate.synopsis" href="lunar-date/LunarDate.html#LunarDate.synopsis">
+<ANCHOR id="LunarDate.object-hierarchy" href="lunar-date/LunarDate.html#LunarDate.object-hierarchy">
+<ANCHOR id="LunarDate.description" href="lunar-date/LunarDate.html#LunarDate.description">
+<ANCHOR id="LunarDate.details" href="lunar-date/LunarDate.html#LunarDate.details">
+<ANCHOR id="LunarDate-struct" href="lunar-date/LunarDate.html#LunarDate-struct">
+<ANCHOR id="LunarDateError" href="lunar-date/LunarDate.html#LunarDateError">
+<ANCHOR id="LUNAR-DATE-ERROR-INTERNAL:CAPS" href="lunar-date/LunarDate.html#LUNAR-DATE-ERROR-INTERNAL:CAPS">
+<ANCHOR id="LUNAR-DATE-ERROR-YEAR:CAPS" href="lunar-date/LunarDate.html#LUNAR-DATE-ERROR-YEAR:CAPS">
+<ANCHOR id="LUNAR-DATE-ERROR-MONTH:CAPS" href="lunar-date/LunarDate.html#LUNAR-DATE-ERROR-MONTH:CAPS">
+<ANCHOR id="LUNAR-DATE-ERROR-DAY:CAPS" href="lunar-date/LunarDate.html#LUNAR-DATE-ERROR-DAY:CAPS">
+<ANCHOR id="LUNAR-DATE-ERROR-HOUR:CAPS" href="lunar-date/LunarDate.html#LUNAR-DATE-ERROR-HOUR:CAPS">
+<ANCHOR id="LUNAR-DATE-ERROR-LEAP:CAPS" href="lunar-date/LunarDate.html#LUNAR-DATE-ERROR-LEAP:CAPS">
+<ANCHOR id="lunar-date-new" href="lunar-date/LunarDate.html#lunar-date-new">
+<ANCHOR id="lunar-date-set-solar-date" href="lunar-date/LunarDate.html#lunar-date-set-solar-date">
+<ANCHOR id="lunar-date-set-lunar-date" href="lunar-date/LunarDate.html#lunar-date-set-lunar-date">
+<ANCHOR id="lunar-date-get-jieri" href="lunar-date/LunarDate.html#lunar-date-get-jieri">
+<ANCHOR id="lunar-date-strftime" href="lunar-date/LunarDate.html#lunar-date-strftime">
+<ANCHOR id="lunar-date-free" href="lunar-date/LunarDate.html#lunar-date-free">
+<ANCHOR id="annotation-glossterm-array" href="lunar-date/annotation-glossary.html#annotation-glossterm-array">
+<ANCHOR id="annotation-glossterm-allow-none" href="lunar-date/annotation-glossary.html#annotation-glossterm-allow-none">
+<ANCHOR id="annotation-glossterm-inout" href="lunar-date/annotation-glossary.html#annotation-glossterm-inout">
+<ANCHOR id="annotation-glossterm-transfer full" href="lunar-date/annotation-glossary.html#annotation-glossterm-transfer full">
