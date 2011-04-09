@@ -1,5 +1,5 @@
 PWD=$(shell pwd)
-all: lunar-date-doc
+all: lunar-date-doc lunar-calendar-doc
 lunar-date-doc:
 	@mkdir tmp; \
 		svn export https://liblunar.googlecode.com/svn/trunk/lunar-date tmp/lunar-date; \
@@ -16,7 +16,7 @@ lunar-calendar-doc:
 		cd tmp/lunar-calendar/; \
 		./autogen.sh --enable-gtk-doc; \
 		make; \
-		cp docs/reference/html/* ${PWD}/lunar-date/; \
+		cp docs/reference/html/* ${PWD}/lunar-calendar/; \
 		cd ${PWD}/lunar-calendar; \
 		for i in *.html;do svn propset "svn:mime-type" "text/html" $$i;done; \
 		rm -rf tmp
