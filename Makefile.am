@@ -1,18 +1,11 @@
 ACLOCAL_AMFLAGS = -I m4
-SUBDIRS = po lunar-date data tests docs
-
+SUBDIRS = lunar-calendar tests docs
+ACLOCAL_AMFLAGS = -I m4INTROSPECTION_GIRS
 EXTRA_DIST =                    \
-	lunar-date-2.0.pc.in	\
-        ChangeLog.pre-2-2       \
+	lunar-calendar-2.0.pc.in	\
 	sanity_check		\
-        intltool-extract.in     \
-        intltool-merge.in       \
-        intltool-update.in
-
-DISTCLEANFILES =                \
-        intltool-extract        \
-        intltool-merge          \
-        intltool-update
+	xmldocs.make 		\
+	omf.make
 
 MAINTAINERCLEANFILES = 		\
 	aclocal.m4		\
@@ -25,7 +18,9 @@ MAINTAINERCLEANFILES = 		\
 	ltmain.sh		\
 	missing			\
 	mkinstalldirs		\
+	omf.make		\
 	py-compile		\
+	xmldocs.make		\
 	m4/gtk-doc.m4		\
 	m4/intltool.m4		\
 	m4/libtool.m4		\
@@ -36,12 +31,10 @@ MAINTAINERCLEANFILES = 		\
 	`find "$(srcdir)" -type f -name Makefile.in -print`
 
 pkgconfigdir = $(libdir)/pkgconfig
-pkgconfig_DATA = lunar-date-2.0.pc
+pkgconfig_DATA = lunar-calendar-2.0.pc
 
-if HAVE_INTROSPECTION
 if HAVE_VALA
 SUBDIRS += vapi
-endif
 endif
 
 DISTCHECK_CONFIGURE_FLAGS = --enable-gtk-doc --enable-introspection
@@ -60,7 +53,7 @@ snapshot:
 snapcheck:
 	$(MAKE) distcheck distdir=$(PACKAGE)-snap`date +"%Y%m%d"`
 
-CHANGELOG_START = tags/v2.2.3
+CHANGELOG_START = tags/v2.2.2
 
 ChangeLog:
 	@echo Creating $@
@@ -77,8 +70,6 @@ ChangeLog:
         fi
 
 dist-hook:
-	$(MAKE) -C "$(srcdir)/po" "$(GETTEXT_PACKAGE).pot"
-	cp "$(srcdir)/po/$(GETTEXT_PACKAGE).pot" "$(distdir)/po/"
 	if test -f $(srcdir)/INSTALL.in && test -f $(srcdir)/README.in ; then \
 		CONFIG_FILES="INSTALL:$(srcdir)/INSTALL.in README:$(srcdir)/README.in" \
 		CONFIG_HEADERS= \
