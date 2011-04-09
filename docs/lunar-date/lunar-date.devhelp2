@@ -3,7 +3,7 @@
 <book xmlns="http://www.devhelp.net/book" title="LunarDate Reference Manual" link="index.html" author="" name="lunar-date" version="2" language="c">
   <chapters>
     <sub name="LunarDate" link="ch01.html">
-      <sub name="lunar-misc" link="lunar-date-lunar-misc.html"/>
+      <sub name="Misc" link="lunar-date-Misc.html"/>
       <sub name="LunarDate" link="LunarDate.html"/>
     </sub>
     <sub name="Object Hierarchy" link="object-tree.html"/>
@@ -12,12 +12,12 @@
     <sub name="Annotation Glossary" link="annotation-glossary.html"/>
   </chapters>
   <functions>
-    <keyword type="macro" name="LIBLUNAR_MAJOR_VERSION" link="lunar-date-lunar-misc.html#LIBLUNAR-MAJOR-VERSION:CAPS"/>
-    <keyword type="macro" name="LIBLUNAR_MINOR_VERSION" link="lunar-date-lunar-misc.html#LIBLUNAR-MINOR-VERSION:CAPS"/>
-    <keyword type="macro" name="LIBLUNAR_MICRO_VERSION" link="lunar-date-lunar-misc.html#LIBLUNAR-MICRO-VERSION:CAPS"/>
-    <keyword type="function" name="lunar_init ()" link="lunar-date-lunar-misc.html#lunar-init"/>
-    <keyword type="function" name="lunar_check_version ()" link="lunar-date-lunar-misc.html#lunar-check-version"/>
-    <keyword type="macro" name="LIBLUNAR_CHECK_VERSION()" link="lunar-date-lunar-misc.html#LIBLUNAR-CHECK-VERSION:CAPS"/>
+    <keyword type="macro" name="LUNAR_MAJOR_VERSION" link="lunar-date-Misc.html#LUNAR-MAJOR-VERSION:CAPS"/>
+    <keyword type="macro" name="LUNAR_MINOR_VERSION" link="lunar-date-Misc.html#LUNAR-MINOR-VERSION:CAPS"/>
+    <keyword type="macro" name="LUNAR_MICRO_VERSION" link="lunar-date-Misc.html#LUNAR-MICRO-VERSION:CAPS"/>
+    <keyword type="function" name="lunar_init ()" link="lunar-date-Misc.html#lunar-init"/>
+    <keyword type="function" name="lunar_check_version ()" link="lunar-date-Misc.html#lunar-check-version"/>
+    <keyword type="macro" name="LUNAR_CHECK_VERSION()" link="lunar-date-Misc.html#LUNAR-CHECK-VERSION:CAPS"/>
     <keyword type="struct" name="struct LunarDate" link="LunarDate.html#LunarDate-struct"/>
     <keyword type="enum" name="enum LunarDateError" link="LunarDate.html#LunarDateError"/>
     <keyword type="function" name="lunar_date_new ()" link="LunarDate.html#lunar-date-new"/>

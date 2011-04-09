@@ -3,7 +3,7 @@
 <book xmlns="http://www.devhelp.net/book" title="LunarDate Reference Manual" link="index.html" author="" name="lunar-date">
   <chapters>
     <sub name="LunarDate" link="ch01.html">
-      <sub name="lunar-misc" link="lunar-date-lunar-misc.html"/>
+      <sub name="Misc" link="lunar-date-Misc.html"/>
       <sub name="LunarDate" link="LunarDate.html"/>
     </sub>
     <sub name="Object Hierarchy" link="object-tree.html"/>
@@ -12,12 +12,12 @@
     <sub name="Annotation Glossary" link="annotation-glossary.html"/>
   </chapters>
   <functions>
-    <function name="LIBLUNAR_MAJOR_VERSION" link="lunar-date-lunar-misc.html#LIBLUNAR-MAJOR-VERSION:CAPS"/>
-    <function name="LIBLUNAR_MINOR_VERSION" link="lunar-date-lunar-misc.html#LIBLUNAR-MINOR-VERSION:CAPS"/>
-    <function name="LIBLUNAR_MICRO_VERSION" link="lunar-date-lunar-misc.html#LIBLUNAR-MICRO-VERSION:CAPS"/>
-    <function name="lunar_init ()" link="lunar-date-lunar-misc.html#lunar-init"/>
-    <function name="lunar_check_version ()" link="lunar-date-lunar-misc.html#lunar-check-version"/>
-    <function name="LIBLUNAR_CHECK_VERSION()" link="lunar-date-lunar-misc.html#LIBLUNAR-CHECK-VERSION:CAPS"/>
+    <function name="LUNAR_MAJOR_VERSION" link="lunar-date-Misc.html#LUNAR-MAJOR-VERSION:CAPS"/>
+    <function name="LUNAR_MINOR_VERSION" link="lunar-date-Misc.html#LUNAR-MINOR-VERSION:CAPS"/>
+    <function name="LUNAR_MICRO_VERSION" link="lunar-date-Misc.html#LUNAR-MICRO-VERSION:CAPS"/>
+    <function name="lunar_init ()" link="lunar-date-Misc.html#lunar-init"/>
+    <function name="lunar_check_version ()" link="lunar-date-Misc.html#lunar-check-version"/>
+    <function name="LUNAR_CHECK_VERSION()" link="lunar-date-Misc.html#LUNAR-CHECK-VERSION:CAPS"/>
     <function name="struct LunarDate" link="LunarDate.html#LunarDate-struct"/>
     <function name="enum LunarDateError" link="LunarDate.html#LunarDateError"/>
     <function name="lunar_date_new ()" link="LunarDate.html#lunar-date-new"/>

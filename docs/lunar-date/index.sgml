@@ -1,14 +1,14 @@
 <ONLINE href="http://liblunar.googlecode.com/svn/docs/lunar-date/index.html">
-<ANCHOR id="lunar-date-lunar-misc" href="lunar-date/lunar-date-lunar-misc.html">
-<ANCHOR id="lunar-date-lunar-misc.synopsis" href="lunar-date/lunar-date-lunar-misc.html#lunar-date-lunar-misc.synopsis">
-<ANCHOR id="lunar-date-lunar-misc.description" href="lunar-date/lunar-date-lunar-misc.html#lunar-date-lunar-misc.description">
-<ANCHOR id="lunar-date-lunar-misc.details" href="lunar-date/lunar-date-lunar-misc.html#lunar-date-lunar-misc.details">
-<ANCHOR id="LIBLUNAR-MAJOR-VERSION:CAPS" href="lunar-date/lunar-date-lunar-misc.html#LIBLUNAR-MAJOR-VERSION:CAPS">
-<ANCHOR id="LIBLUNAR-MINOR-VERSION:CAPS" href="lunar-date/lunar-date-lunar-misc.html#LIBLUNAR-MINOR-VERSION:CAPS">
-<ANCHOR id="LIBLUNAR-MICRO-VERSION:CAPS" href="lunar-date/lunar-date-lunar-misc.html#LIBLUNAR-MICRO-VERSION:CAPS">
-<ANCHOR id="lunar-init" href="lunar-date/lunar-date-lunar-misc.html#lunar-init">
-<ANCHOR id="lunar-check-version" href="lunar-date/lunar-date-lunar-misc.html#lunar-check-version">
-<ANCHOR id="LIBLUNAR-CHECK-VERSION:CAPS" href="lunar-date/lunar-date-lunar-misc.html#LIBLUNAR-CHECK-VERSION:CAPS">
+<ANCHOR id="lunar-date-Misc" href="lunar-date/lunar-date-Misc.html">
+<ANCHOR id="lunar-date-Misc.synopsis" href="lunar-date/lunar-date-Misc.html#lunar-date-Misc.synopsis">
+<ANCHOR id="lunar-date-Misc.description" href="lunar-date/lunar-date-Misc.html#lunar-date-Misc.description">
+<ANCHOR id="lunar-date-Misc.details" href="lunar-date/lunar-date-Misc.html#lunar-date-Misc.details">
+<ANCHOR id="LUNAR-MAJOR-VERSION:CAPS" href="lunar-date/lunar-date-Misc.html#LUNAR-MAJOR-VERSION:CAPS">
+<ANCHOR id="LUNAR-MINOR-VERSION:CAPS" href="lunar-date/lunar-date-Misc.html#LUNAR-MINOR-VERSION:CAPS">
+<ANCHOR id="LUNAR-MICRO-VERSION:CAPS" href="lunar-date/lunar-date-Misc.html#LUNAR-MICRO-VERSION:CAPS">
+<ANCHOR id="lunar-init" href="lunar-date/lunar-date-Misc.html#lunar-init">
+<ANCHOR id="lunar-check-version" href="lunar-date/lunar-date-Misc.html#lunar-check-version">
+<ANCHOR id="LUNAR-CHECK-VERSION:CAPS" href="lunar-date/lunar-date-Misc.html#LUNAR-CHECK-VERSION:CAPS">
 <ANCHOR id="LunarDate" href="lunar-date/LunarDate.html">
 <ANCHOR id="LunarDate.synopsis" href="lunar-date/LunarDate.html#LunarDate.synopsis">
 <ANCHOR id="LunarDate.object-hierarchy" href="lunar-date/LunarDate.html#LunarDate.object-hierarchy">
