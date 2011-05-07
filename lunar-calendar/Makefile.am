@@ -1,104 +1,56 @@
-ACLOCAL_AMFLAGS = -I m4
-SUBDIRS = po lunar-calendar tests docs
-ACLOCAL_AMFLAGS = -I m4INTROSPECTION_GIRS
-EXTRA_DIST =                    \
-	lunar-calendar-2.0.pc.in	\
-	sanity_check		\
-	xmldocs.make 		\
-	omf.make
+export_symbols = $(LIBTOOL_EXPORT_OPTIONS)
 
-MAINTAINERCLEANFILES = 		\
-	aclocal.m4		\
-	config.guess		\
-	config.h.in		\
-	config.sub		\
-	depcomp			\
-	gtk-doc.make		\
-	install-sh		\
-	ltmain.sh		\
-	missing			\
-	mkinstalldirs		\
-	omf.make		\
-	py-compile		\
-	xmldocs.make		\
-	m4/gtk-doc.m4		\
-	m4/intltool.m4		\
-	m4/libtool.m4		\
-	m4/ltoptions.m4		\
-	m4/ltsugar.m4		\
-	m4/ltversion.m4		\
-	m4/lt~obsolete.m4	\
-	`find "$(srcdir)" -type f -name Makefile.in -print`
+CLEANFILES =
 
-pkgconfigdir = $(libdir)/pkgconfig
-pkgconfig_DATA = lunar-calendar-2.0.pc
+INCLUDES =                                              \
+	-I$(top_srcdir)					\
+        -I$(srcdir) 					\
+	$(LUNAR_CALENDAR_CFLAGS)				\
+	$(WARN_CFLAGS)
 
-if HAVE_VALA
-SUBDIRS += vapi
+source_h = lunar-calendar.h 
+source_c = lunar-calendar.c
+
+lib_LTLIBRARIES = liblunar-calendar-2.0.la liblunar-calendar-preload.la
+
+liblunar_calendar_2_0_includedir = $(includedir)/liblunar-2.0/lunar-calendar
+liblunar_calendar_2_0_include_HEADERS =	$(source_h)
+liblunar_calendar_2_0_la_SOURCES = $(source_c)
+liblunar_calendar_2_0_la_LIBADD = $(LUNAR_CALENDAR_LIBS)
+liblunar_calendar_2_0_la_LDFLAGS = \
+	-version-info $(LT_CURRENT):$(LT_REVISION):$(LT_AGE) \
+	-export-dynamic $(export_symbols)
+
+liblunar_calendar_preload_includedir = $(includedir)/liblunar-2.0/lunar-calendar
+liblunar_calendar_preload_include_HEADERS = $(source_h)
+liblunar_calendar_preload_la_SOURCES = lunar-calendar-preload.c
+liblunar_calendar_preload_la_LDFLAGS =  -version-info $(LT_CURRENT):$(LT_REVISION):$(LT_AGE) 
+liblunar_calendar_preload_la_LIBADD = 	\
+	$(LUNAR_CALENDAR_LIBS)	\
+	liblunar-calendar-2.0.la		\
+	-ldl			\
+	$(NULL)
+
+if HAVE_INTROSPECTION
+-include $(INTROSPECTION_MAKEFILE)
+INTROSPECTION_GIRS = LunarCalendar-2.0.gir
+INTROSPECTION_SCANNER_ARGS = -I$(top_srcdir) -I$(srcdir) $(LUNAR_CALENDAR_CFLAGS) --warn-all --identifier-prefix=Lunar
+#INTROSPECTION_COMPILER_ARGS = $(LUNAR_CALENDAR_LIBS) liblunar-calendar-2.0.la
+
+LunarCalendar-2.0.gir: liblunar-calendar-2.0.la
+LunarCalendar_2_0_gir_NAMESPACE = LunarCalendar
+LunarCalendar_2_0_gir_VERSION = 2.0
+LunarCalendar_2_0_gir_LIBS = $(builddir)/liblunar-calendar-2.0.la
+LunarCalendar_2_0_gir_FILES = $(source_h) $(source_c)
+LunarCalendar_2_0_gir_INCLUDES = Gtk-2.0 LunarDate-2.0
+
+girdir = $(datadir)/gir-1.0
+dist_gir_DATA = $(INTROSPECTION_GIRS)
+
+typelibdir = $(libdir)/girepository-1.0
+typelib_DATA = $(INTROSPECTION_GIRS:.gir=.typelib)
+
+CLEANFILES += $(dist_gir_DATA) $(typelib_DATA)
 endif
-
-DISTCHECK_CONFIGURE_FLAGS = --enable-gtk-doc --enable-introspection
-
-.PHONY: release sanity snapshot snapcheck ChangeLog
-
-release:
-	googlecode_upload.py -s $(distdir).tar.gz -p liblunar -u yetist@gmail.com -l Featured,Type-Source,OpSys-Linux $(distdir).tar.gz
-
-sanity:
-	./sanity_check $(VERSION)
-
-snapshot:
-	$(MAKE) dist distdir=$(PACKAGE)-snap`date +"%Y%m%d"`
-
-snapcheck:
-	$(MAKE) distcheck distdir=$(PACKAGE)-snap`date +"%Y%m%d"`
-
-CHANGELOG_START = tags/v2.2.2
-
-ChangeLog:
-	@echo Creating $@
-	@if test -d "$(srcdir)/../.git"; then \
-          (./missing --run git log $(CHANGELOG_START)^^.. --stat $(srcdir) ) | fmt --split-only > $@.tmp \
-          && mv -f $@.tmp $@ \
-          || ($(RM) $@.tmp; \
-              echo Failed to generate ChangeLog, your ChangeLog may be outdated >&2; \
-              (test -f $@ || echo git-log is required to generate this file >> $@)); \
-        else \
-          test -f $@ || \
-          (echo A git checkout and git-log is required to generate ChangeLog >&2 && \
-          echo A git checkout and git-log is required to generate this file >> $@); \
-        fi
-
-dist-hook:
-	if test -f $(srcdir)/INSTALL.in && test -f $(srcdir)/README.in ; then \
-		CONFIG_FILES="INSTALL:$(srcdir)/INSTALL.in README:$(srcdir)/README.in" \
-		CONFIG_HEADERS= \
-		$(SHELL) config.status \
-		&& cp INSTALL README $(distdir) ; \
-	fi
-
-distclean-local:
-	if test "$(srcdir)" = "."; then :; else \
-                rm -f ChangeLog; \
-        fi
-
-synchtml:
-	modname=lunar-calendar; \
-		svnroot="https://liblunar.googlecode.com/svn/docs/lunar-calendar"; \
-		tmpdir=tmp/svndocs; \
-		if [ -d $$tmpdir ];then \
-		svn update $$tmpdir/$$modname; \
-		else \
-		mkdir -p $$tmpdir; \
-		svn checkout $$svnroot $$tmpdir/$$modname; \
-		fi ; \
-		if [ -d docs/reference/html ];then \
-		cp docs/reference/html/* $$tmpdir/$$modname/; \
-		svn status $$tmpdir/$$modname |grep "?" |awk '{print $2}'|xargs svn add; \
-		find $$tmpdir/$$modname -maxdepth 1 -type f -name "*.htm*" -exec svn propset "svn:mime-type" "text/html" {} \; ; \
-		svn commit -m "update $$modname html docs" $$tmpdir/$$modname; \
-		else \
-		echo "please make docs first"; \
-		fi
 
 -include $(top_srcdir)/git.mk
