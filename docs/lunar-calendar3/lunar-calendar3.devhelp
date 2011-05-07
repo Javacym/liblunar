@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE book PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "">
+<book xmlns="http://www.devhelp.net/book" title="LunarCalendar Reference Manual" link="index.html" author="" name="lunar-calendar3">
+  <chapters>
+    <sub name="API Reference" link="ch01.html">
+      <sub name="LunarCalendar" link="lunar-calendar3-LunarCalendar.html"/>
+    </sub>
+    <sub name="Object Hierarchy" link="object-tree.html"/>
+    <sub name="API Index" link="api-index-full.html"/>
+    <sub name="Index of deprecated API" link="deprecated-api-index.html"/>
+  </chapters>
+  <functions>
+    <function name="struct LunarCalendar" link="lunar-calendar3-LunarCalendar.html#LunarCalendar"/>
+    <function name="lunar_calendar_set_jieri_color ()" link="lunar-calendar3-LunarCalendar.html#lunar-calendar-set-jieri-color"/>
+    <function name="lunar_calendar_new ()" link="lunar-calendar3-LunarCalendar.html#lunar-calendar-new"/>
+  </functions>
+</book>
