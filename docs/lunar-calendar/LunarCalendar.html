@@ -5,8 +5,8 @@
 <title>LunarCalendar</title>
 <meta name="generator" content="DocBook XSL Stylesheets V1.76.1">
 <link rel="home" href="index.html" title="LunarCalendar Reference Manual">
-<link rel="up" href="ch01.html" title="LunarCalendar">
-<link rel="prev" href="ch01.html" title="LunarCalendar">
+<link rel="up" href="ch01.html" title="API Reference">
+<link rel="prev" href="ch01.html" title="API Reference">
 <link rel="next" href="object-tree.html" title="Object Hierarchy">
 <meta name="generator" content="GTK-Doc V1.17 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
@@ -35,14 +35,14 @@
 <div class="refnamediv"><table width="100%"><tr>
 <td valign="top">
 <h2><span class="refentrytitle"><a name="LunarCalendar.top_of_page"></a>LunarCalendar</span></h2>
-<p>LunarCalendar</p>
+<p>LunarCalendar — Chinese Lunar Calendar widget for GTK+</p>
 </td>
 <td valign="top" align="right"><img src="lunar-calendar.png"></td>
 </tr></table></div>
 <div class="refsynopsisdiv">
 <a name="LunarCalendar.synopsis"></a><h2>Synopsis</h2>
 <pre class="synopsis">
-#include &lt;calendar.h&gt;
+#include &lt;lunar-calendar/lunar-calendar.h&gt;
 
 struct              <a class="link" href="LunarCalendar.html#LunarCalendar-struct" title="struct LunarCalendar">LunarCalendar</a>;
 <span class="returnvalue">void</span>                <a class="link" href="LunarCalendar.html#lunar-calendar-set-jieri-color" title="lunar_calendar_set_jieri_color ()">lunar_calendar_set_jieri_color</a>      (<em class="parameter"><code><a class="link" href="LunarCalendar.html" title="LunarCalendar"><span class="type">LunarCalendar</span></a> *lunar</code></em>,
@@ -53,8 +53,8 @@ struct              <a class="link" href="LunarCalendar.html#LunarCalendar-struc
 <div class="refsect1">
 <a name="LunarCalendar.object-hierarchy"></a><h2>Object Hierarchy</h2>
 <pre class="synopsis">
-  <a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#GObject">GObject</a>
-   +----<a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#GInitiallyUnowned">GInitiallyUnowned</a>
+  <a href="../gobject/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+   +----<a href="../gobject/gobject-The-Base-Object-Type.html#GInitiallyUnowned">GInitiallyUnowned</a>
          +----GtkObject
                +----GtkWidget
                      +----GtkCalendar
@@ -69,6 +69,9 @@ LunarCalendar implements
 </div>
 <div class="refsect1">
 <a name="LunarCalendar.description"></a><h2>Description</h2>
+<p>
+The <a href="../lunar/LunarDate.html"><span class="type">LunarDate</span></a> provide Chinese lunar Calendar Wieget for GTK+ .
+</p>
 </div>
 <div class="refsect1">
 <a name="LunarCalendar.details"></a><h2>Details</h2>
