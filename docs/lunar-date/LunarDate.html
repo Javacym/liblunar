@@ -5,8 +5,8 @@
 <title>LunarDate</title>
 <meta name="generator" content="DocBook XSL Stylesheets V1.76.1">
 <link rel="home" href="index.html" title="LunarDate Reference Manual">
-<link rel="up" href="ch01.html" title="LunarDate">
-<link rel="prev" href="lunar-date-Misc.html" title="Misc">
+<link rel="up" href="ch01.html" title="API Reference">
+<link rel="prev" href="lunar-date-Version-Information.html" title="Version Information">
 <link rel="next" href="object-tree.html" title="Object Hierarchy">
 <meta name="generator" content="GTK-Doc V1.17 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
@@ -14,7 +14,7 @@
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
 <table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="2">
 <tr valign="middle">
-<td><a accesskey="p" href="lunar-date-Misc.html"><img src="left.png" width="24" height="24" border="0" alt="Prev"></a></td>
+<td><a accesskey="p" href="lunar-date-Version-Information.html"><img src="left.png" width="24" height="24" border="0" alt="Prev"></a></td>
 <td><a accesskey="u" href="ch01.html"><img src="up.png" width="24" height="24" border="0" alt="Up"></a></td>
 <td><a accesskey="h" href="index.html"><img src="home.png" width="24" height="24" border="0" alt="Home"></a></td>
 <th width="100%" align="center">LunarDate Reference Manual</th>
@@ -33,34 +33,34 @@
 <div class="refnamediv"><table width="100%"><tr>
 <td valign="top">
 <h2><span class="refentrytitle"><a name="LunarDate.top_of_page"></a>LunarDate</span></h2>
-<p>LunarDate</p>
+<p>LunarDate — Chinese Lunar Date Library</p>
 </td>
 <td valign="top" align="right"></td>
 </tr></table></div>
 <div class="refsynopsisdiv">
 <a name="LunarDate.synopsis"></a><h2>Synopsis</h2>
 <pre class="synopsis">
-#include &lt;date.h&gt;
+#include &lt;lunar-date/lunar-date.h&gt;
 
 struct              <a class="link" href="LunarDate.html#LunarDate-struct" title="struct LunarDate">LunarDate</a>;
 enum                <a class="link" href="LunarDate.html#LunarDateError" title="enum LunarDateError">LunarDateError</a>;
 <a class="link" href="LunarDate.html" title="LunarDate"><span class="returnvalue">LunarDate</span></a> *	        <a class="link" href="LunarDate.html#lunar-date-new" title="lunar_date_new ()">lunar_date_new</a>                      (<em class="parameter"><code><span class="type">void</span></code></em>);
 <span class="returnvalue">void</span>                <a class="link" href="LunarDate.html#lunar-date-set-solar-date" title="lunar_date_set_solar_date ()">lunar_date_set_solar_date</a>           (<em class="parameter"><code><a class="link" href="LunarDate.html" title="LunarDate"><span class="type">LunarDate</span></a> *date</code></em>,
-                                                         <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib-Date-and-Time-Functions.html#GDateYear"><span class="type">GDateYear</span></a> year</code></em>,
-                                                         <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib-Date-and-Time-Functions.html#GDateMonth"><span class="type">GDateMonth</span></a> month</code></em>,
-                                                         <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib-Date-and-Time-Functions.html#GDateDay"><span class="type">GDateDay</span></a> day</code></em>,
-                                                         <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib-Basic-Types.html#guint8"><span class="type">guint8</span></a> hour</code></em>,
-                                                         <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);
+                                                         <em class="parameter"><code><a href="../glib/glib-Date-and-Time-Functions.html#GDateYear"><span class="type">GDateYear</span></a> year</code></em>,
+                                                         <em class="parameter"><code><a href="../glib/glib-Date-and-Time-Functions.html#GDateMonth"><span class="type">GDateMonth</span></a> month</code></em>,
+                                                         <em class="parameter"><code><a href="../glib/glib-Date-and-Time-Functions.html#GDateDay"><span class="type">GDateDay</span></a> day</code></em>,
+                                                         <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint8"><span class="type">guint8</span></a> hour</code></em>,
+                                                         <em class="parameter"><code><a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);
 <span class="returnvalue">void</span>                <a class="link" href="LunarDate.html#lunar-date-set-lunar-date" title="lunar_date_set_lunar_date ()">lunar_date_set_lunar_date</a>           (<em class="parameter"><code><a class="link" href="LunarDate.html" title="LunarDate"><span class="type">LunarDate</span></a> *date</code></em>,
-                                                         <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib-Date-and-Time-Functions.html#GDateYear"><span class="type">GDateYear</span></a> year</code></em>,
-                                                         <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib-Date-and-Time-Functions.html#GDateMonth"><span class="type">GDateMonth</span></a> month</code></em>,
-                                                         <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib-Date-and-Time-Functions.html#GDateDay"><span class="type">GDateDay</span></a> day</code></em>,
-                                                         <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib-Basic-Types.html#guint8"><span class="type">guint8</span></a> hour</code></em>,
-                                                         <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> isleap</code></em>,
-                                                         <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);
-<a href="/usr/share/gtk-doc/html/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *		           <a class="link" href="LunarDate.html#lunar-date-get-jieri" title="lunar_date_get_jieri ()">lunar_date_get_jieri</a>                (<em class="parameter"><code><a class="link" href="LunarDate.html" title="LunarDate"><span class="type">LunarDate</span></a> *date</code></em>,
-                                                         <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *delimiter</code></em>);
-<a href="/usr/share/gtk-doc/html/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *		           <a class="link" href="LunarDate.html#lunar-date-strftime" title="lunar_date_strftime ()">lunar_date_strftime</a>                 (<em class="parameter"><code><a class="link" href="LunarDate.html" title="LunarDate"><span class="type">LunarDate</span></a> *date</code></em>,
+                                                         <em class="parameter"><code><a href="../glib/glib-Date-and-Time-Functions.html#GDateYear"><span class="type">GDateYear</span></a> year</code></em>,
+                                                         <em class="parameter"><code><a href="../glib/glib-Date-and-Time-Functions.html#GDateMonth"><span class="type">GDateMonth</span></a> month</code></em>,
+                                                         <em class="parameter"><code><a href="../glib/glib-Date-and-Time-Functions.html#GDateDay"><span class="type">GDateDay</span></a> day</code></em>,
+                                                         <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint8"><span class="type">guint8</span></a> hour</code></em>,
+                                                         <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> isleap</code></em>,
+                                                         <em class="parameter"><code><a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);
+<a href="../glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *		           <a class="link" href="LunarDate.html#lunar-date-get-jieri" title="lunar_date_get_jieri ()">lunar_date_get_jieri</a>                (<em class="parameter"><code><a class="link" href="LunarDate.html" title="LunarDate"><span class="type">LunarDate</span></a> *date</code></em>,
+                                                         <em class="parameter"><code>const <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *delimiter</code></em>);
+<a href="../glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *		           <a class="link" href="LunarDate.html#lunar-date-strftime" title="lunar_date_strftime ()">lunar_date_strftime</a>                 (<em class="parameter"><code><a class="link" href="LunarDate.html" title="LunarDate"><span class="type">LunarDate</span></a> *date</code></em>,
                                                          <em class="parameter"><code>const <span class="type">char</span> *format</code></em>);
 <span class="returnvalue">void</span>                <a class="link" href="LunarDate.html#lunar-date-free" title="lunar_date_free ()">lunar_date_free</a>                     (<em class="parameter"><code><a class="link" href="LunarDate.html" title="LunarDate"><span class="type">LunarDate</span></a> *date</code></em>);
 </pre>
@@ -68,18 +68,24 @@ enum                <a class="link" href="LunarDate.html#LunarDateError" title="
 <div class="refsect1">
 <a name="LunarDate.object-hierarchy"></a><h2>Object Hierarchy</h2>
 <pre class="synopsis">
-  <a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+  <a href="../gobject/gobject-The-Base-Object-Type.html#GObject">GObject</a>
    +----LunarDate
 </pre>
 </div>
 <div class="refsect1">
 <a name="LunarDate.description"></a><h2>Description</h2>
+<p>
+The <a class="link" href="LunarDate.html" title="LunarDate"><span class="type">LunarDate</span></a> provide Chinese lunar date library.
+</p>
 </div>
 <div class="refsect1">
 <a name="LunarDate.details"></a><h2>Details</h2>
 <div class="refsect2">
 <a name="LunarDate-struct"></a><h3>struct LunarDate</h3>
 <pre class="programlisting">struct LunarDate;</pre>
+<p>
+All of these fields should be considered read-only.
+</p>
 </div>
 <hr>
 <div class="refsect2">
@@ -150,11 +156,11 @@ Allocates a <a class="link" href="LunarDate.html" title="LunarDate"><span class=
 <div class="refsect2">
 <a name="lunar-date-set-solar-date"></a><h3>lunar_date_set_solar_date ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>                lunar_date_set_solar_date           (<em class="parameter"><code><a class="link" href="LunarDate.html" title="LunarDate"><span class="type">LunarDate</span></a> *date</code></em>,
-                                                         <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib-Date-and-Time-Functions.html#GDateYear"><span class="type">GDateYear</span></a> year</code></em>,
-                                                         <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib-Date-and-Time-Functions.html#GDateMonth"><span class="type">GDateMonth</span></a> month</code></em>,
-                                                         <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib-Date-and-Time-Functions.html#GDateDay"><span class="type">GDateDay</span></a> day</code></em>,
-                                                         <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib-Basic-Types.html#guint8"><span class="type">guint8</span></a> hour</code></em>,
-                                                         <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+                                                         <em class="parameter"><code><a href="../glib/glib-Date-and-Time-Functions.html#GDateYear"><span class="type">GDateYear</span></a> year</code></em>,
+                                                         <em class="parameter"><code><a href="../glib/glib-Date-and-Time-Functions.html#GDateMonth"><span class="type">GDateMonth</span></a> month</code></em>,
+                                                         <em class="parameter"><code><a href="../glib/glib-Date-and-Time-Functions.html#GDateDay"><span class="type">GDateDay</span></a> day</code></em>,
+                                                         <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint8"><span class="type">guint8</span></a> hour</code></em>,
+                                                         <em class="parameter"><code><a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
 <p>
 Sets the solar year, month, day and the hour for a <a class="link" href="LunarDate.html" title="LunarDate"><span class="type">LunarDate</span></a>.
 </p>
@@ -192,12 +198,12 @@ Sets the solar year, month, day and the hour for a <a class="link" href="LunarDa
 <div class="refsect2">
 <a name="lunar-date-set-lunar-date"></a><h3>lunar_date_set_lunar_date ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>                lunar_date_set_lunar_date           (<em class="parameter"><code><a class="link" href="LunarDate.html" title="LunarDate"><span class="type">LunarDate</span></a> *date</code></em>,
-                                                         <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib-Date-and-Time-Functions.html#GDateYear"><span class="type">GDateYear</span></a> year</code></em>,
-                                                         <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib-Date-and-Time-Functions.html#GDateMonth"><span class="type">GDateMonth</span></a> month</code></em>,
-                                                         <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib-Date-and-Time-Functions.html#GDateDay"><span class="type">GDateDay</span></a> day</code></em>,
-                                                         <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib-Basic-Types.html#guint8"><span class="type">guint8</span></a> hour</code></em>,
-                                                         <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> isleap</code></em>,
-                                                         <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+                                                         <em class="parameter"><code><a href="../glib/glib-Date-and-Time-Functions.html#GDateYear"><span class="type">GDateYear</span></a> year</code></em>,
+                                                         <em class="parameter"><code><a href="../glib/glib-Date-and-Time-Functions.html#GDateMonth"><span class="type">GDateMonth</span></a> month</code></em>,
+                                                         <em class="parameter"><code><a href="../glib/glib-Date-and-Time-Functions.html#GDateDay"><span class="type">GDateDay</span></a> day</code></em>,
+                                                         <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint8"><span class="type">guint8</span></a> hour</code></em>,
+                                                         <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> isleap</code></em>,
+                                                         <em class="parameter"><code><a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
 <p>
 Sets the lunar year, month, day and the hour for a <a class="link" href="LunarDate.html" title="LunarDate"><span class="type">LunarDate</span></a>. If the month is a leap month, you should set the isleap to TRUE.
 </p>
@@ -230,7 +236,7 @@ Sets the lunar year, month, day and the hour for a <a class="link" href="LunarDa
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>error</code></em> :</span></p></td>
-<td>location to store the error occuring, or <a href="/usr/share/gtk-doc/html/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib-Standard-Macros.html#NULL:CAPS"><span class="type">NULL</span></a> to ignore errors.</td>
+<td>location to store the error occuring, or <a href="../glib/glib-Standard-Macros.html#NULL:CAPS"><span class="type">NULL</span></a> to ignore errors.</td>
 </tr>
 </tbody>
 </table></div>
@@ -238,8 +244,8 @@ Sets the lunar year, month, day and the hour for a <a class="link" href="LunarDa
 <hr>
 <div class="refsect2">
 <a name="lunar-date-get-jieri"></a><h3>lunar_date_get_jieri ()</h3>
-<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *		           lunar_date_get_jieri                (<em class="parameter"><code><a class="link" href="LunarDate.html" title="LunarDate"><span class="type">LunarDate</span></a> *date</code></em>,
-                                                         <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *delimiter</code></em>);</pre>
+<pre class="programlisting"><a href="../glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *		           lunar_date_get_jieri                (<em class="parameter"><code><a class="link" href="LunarDate.html" title="LunarDate"><span class="type">LunarDate</span></a> *date</code></em>,
+                                                         <em class="parameter"><code>const <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *delimiter</code></em>);</pre>
 <p>
 Returns the all holiday of the date, joined with the delimiter. The date must be valid.
 </p>
@@ -266,7 +272,7 @@ This can be changed in  <a class="ulink" href="http://www.freedesktop.org/wiki/S
 <hr>
 <div class="refsect2">
 <a name="lunar-date-strftime"></a><h3>lunar_date_strftime ()</h3>
-<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *		           lunar_date_strftime                 (<em class="parameter"><code><a class="link" href="LunarDate.html" title="LunarDate"><span class="type">LunarDate</span></a> *date</code></em>,
+<pre class="programlisting"><a href="../glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *		           lunar_date_strftime                 (<em class="parameter"><code><a class="link" href="LunarDate.html" title="LunarDate"><span class="type">LunarDate</span></a> *date</code></em>,
                                                          <em class="parameter"><code>const <span class="type">char</span> *format</code></em>);</pre>
 <p>
 使用给定的格式来输出字符串。类似于strftime的用法。可使用的格式及输出如下：

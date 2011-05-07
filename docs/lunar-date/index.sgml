@@ -1,14 +1,17 @@
 <ONLINE href="http://liblunar.googlecode.com/svn/docs/lunar-date/index.html">
-<ANCHOR id="lunar-date-Misc" href="lunar-date/lunar-date-Misc.html">
-<ANCHOR id="lunar-date-Misc.synopsis" href="lunar-date/lunar-date-Misc.html#lunar-date-Misc.synopsis">
-<ANCHOR id="lunar-date-Misc.description" href="lunar-date/lunar-date-Misc.html#lunar-date-Misc.description">
-<ANCHOR id="lunar-date-Misc.details" href="lunar-date/lunar-date-Misc.html#lunar-date-Misc.details">
-<ANCHOR id="LUNAR-MAJOR-VERSION:CAPS" href="lunar-date/lunar-date-Misc.html#LUNAR-MAJOR-VERSION:CAPS">
-<ANCHOR id="LUNAR-MINOR-VERSION:CAPS" href="lunar-date/lunar-date-Misc.html#LUNAR-MINOR-VERSION:CAPS">
-<ANCHOR id="LUNAR-MICRO-VERSION:CAPS" href="lunar-date/lunar-date-Misc.html#LUNAR-MICRO-VERSION:CAPS">
-<ANCHOR id="lunar-init" href="lunar-date/lunar-date-Misc.html#lunar-init">
-<ANCHOR id="lunar-check-version" href="lunar-date/lunar-date-Misc.html#lunar-check-version">
-<ANCHOR id="LUNAR-CHECK-VERSION:CAPS" href="lunar-date/lunar-date-Misc.html#LUNAR-CHECK-VERSION:CAPS">
+<ANCHOR id="lunar-date-Version-Information" href="lunar-date/lunar-date-Version-Information.html">
+<ANCHOR id="lunar-date-Version-Information.synopsis" href="lunar-date/lunar-date-Version-Information.html#lunar-date-Version-Information.synopsis">
+<ANCHOR id="lunar-date-Version-Information.description" href="lunar-date/lunar-date-Version-Information.html#lunar-date-Version-Information.description">
+<ANCHOR id="lunar-date-Version-Information.details" href="lunar-date/lunar-date-Version-Information.html#lunar-date-Version-Information.details">
+<ANCHOR id="lunar-date-major-version" href="lunar-date/lunar-date-Version-Information.html#lunar-date-major-version">
+<ANCHOR id="lunar-date-minor-version" href="lunar-date/lunar-date-Version-Information.html#lunar-date-minor-version">
+<ANCHOR id="lunar-date-micro-version" href="lunar-date/lunar-date-Version-Information.html#lunar-date-micro-version">
+<ANCHOR id="LUNAR-DATE-MAJOR-VERSION:CAPS" href="lunar-date/lunar-date-Version-Information.html#LUNAR-DATE-MAJOR-VERSION:CAPS">
+<ANCHOR id="LUNAR-DATE-MINOR-VERSION:CAPS" href="lunar-date/lunar-date-Version-Information.html#LUNAR-DATE-MINOR-VERSION:CAPS">
+<ANCHOR id="LUNAR-DATE-MICRO-VERSION:CAPS" href="lunar-date/lunar-date-Version-Information.html#LUNAR-DATE-MICRO-VERSION:CAPS">
+<ANCHOR id="lunar-date-check-version" href="lunar-date/lunar-date-Version-Information.html#lunar-date-check-version">
+<ANCHOR id="LUNAR-DATE-CHECK-VERSION:CAPS" href="lunar-date/lunar-date-Version-Information.html#LUNAR-DATE-CHECK-VERSION:CAPS">
+<ANCHOR id="lunar-init" href="lunar-date/lunar-date-Version-Information.html#lunar-init">
 <ANCHOR id="LunarDate" href="lunar-date/LunarDate.html">
 <ANCHOR id="LunarDate.synopsis" href="lunar-date/LunarDate.html#LunarDate.synopsis">
 <ANCHOR id="LunarDate.object-hierarchy" href="lunar-date/LunarDate.html#LunarDate.object-hierarchy">

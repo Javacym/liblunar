@@ -2,8 +2,8 @@
 <!DOCTYPE book PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "">
 <book xmlns="http://www.devhelp.net/book" title="LunarDate Reference Manual" link="index.html" author="" name="lunar-date">
   <chapters>
-    <sub name="LunarDate" link="ch01.html">
-      <sub name="Misc" link="lunar-date-Misc.html"/>
+    <sub name="API Reference" link="ch01.html">
+      <sub name="Version Information" link="lunar-date-Version-Information.html"/>
       <sub name="LunarDate" link="LunarDate.html"/>
     </sub>
     <sub name="Object Hierarchy" link="object-tree.html"/>
@@ -12,12 +12,15 @@
     <sub name="Annotation Glossary" link="annotation-glossary.html"/>
   </chapters>
   <functions>
-    <function name="LUNAR_MAJOR_VERSION" link="lunar-date-Misc.html#LUNAR-MAJOR-VERSION:CAPS"/>
-    <function name="LUNAR_MINOR_VERSION" link="lunar-date-Misc.html#LUNAR-MINOR-VERSION:CAPS"/>
-    <function name="LUNAR_MICRO_VERSION" link="lunar-date-Misc.html#LUNAR-MICRO-VERSION:CAPS"/>
-    <function name="lunar_init ()" link="lunar-date-Misc.html#lunar-init"/>
-    <function name="lunar_check_version ()" link="lunar-date-Misc.html#lunar-check-version"/>
-    <function name="LUNAR_CHECK_VERSION()" link="lunar-date-Misc.html#LUNAR-CHECK-VERSION:CAPS"/>
+    <function name="lunar_date_major_version" link="lunar-date-Version-Information.html#lunar-date-major-version"/>
+    <function name="lunar_date_minor_version" link="lunar-date-Version-Information.html#lunar-date-minor-version"/>
+    <function name="lunar_date_micro_version" link="lunar-date-Version-Information.html#lunar-date-micro-version"/>
+    <function name="LUNAR_DATE_MAJOR_VERSION" link="lunar-date-Version-Information.html#LUNAR-DATE-MAJOR-VERSION:CAPS"/>
+    <function name="LUNAR_DATE_MINOR_VERSION" link="lunar-date-Version-Information.html#LUNAR-DATE-MINOR-VERSION:CAPS"/>
+    <function name="LUNAR_DATE_MICRO_VERSION" link="lunar-date-Version-Information.html#LUNAR-DATE-MICRO-VERSION:CAPS"/>
+    <function name="lunar_date_check_version ()" link="lunar-date-Version-Information.html#lunar-date-check-version"/>
+    <function name="LUNAR_DATE_CHECK_VERSION()" link="lunar-date-Version-Information.html#LUNAR-DATE-CHECK-VERSION:CAPS"/>
+    <function name="lunar_init ()" link="lunar-date-Version-Information.html#lunar-init"/>
     <function name="struct LunarDate" link="LunarDate.html#LunarDate-struct"/>
     <function name="enum LunarDateError" link="LunarDate.html#LunarDateError"/>
     <function name="lunar_date_new ()" link="LunarDate.html#lunar-date-new"/>
